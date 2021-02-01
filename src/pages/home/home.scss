@@ -1,3 +1,69 @@
 page-home {
-
-}
+    ion-content {
+        background: url('../../assets/imgs/mainbg.png') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+      }
+    ion-toolbar {
+        --background: transparent !important;
+        --ion-color-base: transparent !important;
+        color:white !important
+      }
+      .toolbar-background-md{
+          background: transparent !important;
+      }
+      ion-header ion-toolbar{
+          --background:#b899b3 !important;
+          opacity: 0.9;
+      }
+      ion-header .toolbar-background-md{
+        background: #b899b3 !important;
+    }
+    ion-toolbar ion-icon{
+        color:white !important
+    }
+    #app-section {
+      ion-icon {
+        font-size: 15rem;
+      }
+    }
+    #media-controls {
+      button {
+        ion-icon {
+          font-size: 3.3rem;
+        }
+      }
+    }
+    .songName{
+        text-align: center;
+        font-size: 1.8em;
+        color:white;
+        margin: 0;
+        letter-spacing: 0.2em;
+    }
+    .range-md{
+        padding: 0;
+    }
+    .album{
+        color:white;
+        font-size: 1.15em;
+        text-align: center;
+        margin: 0;
+        font-weight: lighter;
+    }
+    .col{
+        padding: 0;
+    }
+    ion-footer{
+        background: grey;
+        opacity: 0.85;
+    }
+    .musicTime{
+        color:white;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        font-size: 1.15em;
+    }
+  }

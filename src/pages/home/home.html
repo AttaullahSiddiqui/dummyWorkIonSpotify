@@ -1,14 +1,54 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons left>
+      <button ion-button icon-only>
+        <ion-icon name="ios-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title text-center>Now Playing</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="ios-more"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <span class="musicTime">5:31 / 1146</span>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary" padding>
+    <ion-range min="0" color="light" [max]="210" (ionFocus)="onSeekStart()" (ionBlur)="onSeekEnd($event)"
+      name="seekbar">
+    </ion-range>
+    <p class="songName">Flower Fields</p>
+    <p class="album">Mountian man</p>
+    <br>
+    <ion-grid>
+      <ion-row align-items-center id="media-controls">
+        <ion-col></ion-col>
+        <button clear ion-col ion-button>
+          <ion-icon color="light" name="skip-backward"> </ion-icon>
+        </button>
+        <!-- <button clear ion-col ion-button>
+          <ion-icon color="light" name="play"></ion-icon>
+        </button> -->
+        <button clear ion-col ion-button>
+          <ion-icon color="light" name="md-pause"></ion-icon>
+        </button>
+        <button clear ion-col ion-button>
+          <ion-icon color="light" name="skip-forward"></ion-icon>
+        </button>
+        <ion-col></ion-col>
+      </ion-row>
+    </ion-grid>
+    <br>
+    <br>
+  </ion-toolbar>
+</ion-footer>
