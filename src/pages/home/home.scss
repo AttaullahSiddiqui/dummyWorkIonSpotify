@@ -1,9 +1,15 @@
 page-home {
     ion-content {
-        background: url('../../assets/imgs/mainbg.png') no-repeat center center fixed; 
+        background: url('../../assets/imgs/2bg1.png') no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
+      }
+      .scroll-content{
+        margin-top: 30px !important;
+        // margin-bottom: 240px !important;
+        height: 58% !important;
+        padding: 0 !important;
       }
     ion-toolbar {
         --background: transparent !important;
@@ -13,12 +19,8 @@ page-home {
       .toolbar-background-md{
           background: transparent !important;
       }
-      ion-header ion-toolbar{
-          --background:#b899b3 !important;
-          opacity: 0.9;
-      }
       ion-header .toolbar-background-md{
-        background: #b899b3 !important;
+        background: transparent !important;
     }
     ion-toolbar ion-icon{
         color:white !important
@@ -28,27 +30,32 @@ page-home {
         font-size: 15rem;
       }
     }
+    ion-header{
+      .button-inner{
+        font-size: 1.35em;
+      }
+    }
     #media-controls {
       button {
         ion-icon {
-          font-size: 3.3rem;
+          font-size: 2.7rem;
         }
       }
     }
     .songName{
-        text-align: center;
-        font-size: 1.8em;
+        font-size: 1.75em;
         color:white;
         margin: 0;
+        margin-top: -5px;
         letter-spacing: 0.2em;
+        font-weight: 400;
     }
     .range-md{
         padding: 0;
     }
     .album{
-        color:white;
-        font-size: 1.15em;
-        text-align: center;
+        color:rgb(185, 174, 174);
+        font-size: 1.3em;
         margin: 0;
         font-weight: lighter;
     }
@@ -56,14 +63,74 @@ page-home {
         padding: 0;
     }
     ion-footer{
-        background: grey;
-        opacity: 0.85;
+      background: linear-gradient(rgba(37, 36, 36, 0.5), rgba(46, 44, 44, 0.5));
+        ion-toolbar{
+          padding: 5px !important;
+        }
     }
-    .musicTime{
+    .musicTime1{
+        color:white;
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        font-size: 1.15em;
+    }
+    .musicTime2{
         color:white;
         position: absolute;
         right: 10px;
         bottom: 10px;
         font-size: 1.15em;
+    }
+    .albumImg{
+      width: 70%;
+    }
+    .combinedImg{
+      background: none;
+      box-shadow: none;
+      width: 2.4em;
+    }
+    #combined{
+      border: 1px solid grey;
+      border-radius: 25px;
+      background-color: grey;
+      margin: 10px;
+    }
+    .shuffle{
+      background: none;
+      box-shadow: none;
+    }
+    .footerInfo{
+      font-size: 1.35em;
+      margin:0;
+    }
+    ion-card{
+      border-radius: 10px !important;
+      margin:0 !important;
+      background: grey !important;
+      img{
+        max-height: 20vh;
+        border-radius: 10px !important;
+      }
+    }
+    ion-card-content{
+      padding: 4px 0 !important;
+      p{
+        font-size: 0.8em !important;
+        color:white !important;
+        margin: 0 !important
+      }
+    }
+    ion-card-title{
+      font-size: 1.2em !important;
+      margin:0 !important;
+      padding: 0 !important;
+      color:white !important
+    }
+    ion-range{
+      height: 5px !important;
+    }
+    ion-grid{
+      padding: 0 auto !important;
     }
   }
